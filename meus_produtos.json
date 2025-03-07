@@ -1,0 +1,18 @@
+[
+    {
+        "nome": "Placa de Vídeo RTX 3060",
+        "loja": "Kabum",
+        "url": "https://www.kabum.com.br/produto-exemplo",
+        "seletor_nome": "product-title",
+        "seletor_preco": "product-price",
+        "seletor_imagem": "product-image"
+    },
+    {
+        "nome": "Processador Ryzen 5 5600X",
+        "loja": "Terabyteshop",
+        "url": "https://www.terabyteshop.com.br/produto-exemplo",
+        "seletor_nome": "titulo-produto",
+        "seletor_preco": "preco-produto",
+        "seletor_imagem": "imagem-produto"
+    }
+]
