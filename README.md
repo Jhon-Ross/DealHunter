@@ -1,70 +1,70 @@
-#DealHunter
-O DealHunter é um bot que acessa o site da Kabum e filtra as melhores ofertas de produtos, enviando os resultados diretamente para o Discord e o Telegram de forma formatada e fácil de visualizar. Esse projeto visa facilitar a busca por promoções de tecnologia, como PCs, componentes de hardware e outros produtos eletrônicos.
+# **DealHunter**
 
-#Funcionalidades:
-Filtragem de ofertas: O bot acessa o site da Kabum e filtra os melhores valores para produtos selecionados.
-Envio para Discord e Telegram: As ofertas são enviadas automaticamente para canais do Discord e grupos ou chats do Telegram, com a formatação adequada para facilitar a leitura.
-Versão futura para WhatsApp: Em uma futura atualização, o bot também enviará as ofertas para o WhatsApp, permitindo que você acompanhe as promoções diretamente no seu celular.
-Dois modos de operação:
-Modo Kabum: Envia apenas os produtos da Kabum.
-Modo Customizado: Permite que o usuário adicione manualmente produtos de vários sites e envie as ofertas filtradas.
+O **DealHunter** é um bot que acessa o site da **Kabum** e filtra as melhores ofertas de produtos, enviando os resultados diretamente para o **Discord** e o **Telegram** de forma formatada e fácil de visualizar. Esse projeto visa facilitar a busca por promoções de tecnologia, como PCs, componentes de hardware e outros produtos eletrônicos.
 
-#Como Usar
-1. Instalação
+## **Funcionalidades:**
+
+- **Filtragem de ofertas:** O bot acessa o site da Kabum e filtra os melhores valores para produtos selecionados.
+- **Envio para Discord e Telegram:** As ofertas são enviadas automaticamente para canais do Discord e grupos ou chats do Telegram, com a formatação adequada para facilitar a leitura.
+- **Versão futura para WhatsApp:** Em uma futura atualização, o bot também enviará as ofertas para o WhatsApp, permitindo que você acompanhe as promoções diretamente no seu celular.
+- **Dois modos de operação:**
+  - **Modo Kabum:** Envia apenas os produtos da Kabum.
+  - **Modo Customizado:** Permite que o usuário adicione manualmente produtos de vários sites e envie as ofertas filtradas.
+
+---
+
+## **Como Usar**
+
+### **1. Instalação**
+
 Clone o repositório:
 
-bash
-Copiar
-Editar
+```bash
 git clone https://github.com/Jhon-Ross/DealHunter.git
-Entre na pasta do projeto:
+```
 
-bash
-Copiar
-Editar
+**Entre na pasta do projeto:**
+```bash
 cd DealHunter
-2. Dependências
+```
+
+### **2. Dependências**
 Instale as dependências necessárias com o seguinte comando:
-
-bash
-Copiar
-Editar
+```bash
 pip install -r requirements.txt
+```
 
-3. Configuração
+### **3. Configuração**
 Antes de rodar o bot, você precisa configurar os tokens do Discord e Telegram. Siga os passos abaixo para obter os tokens:
 
-Discord:
+### Discord:
+1. Crie um bot no <a href="https://discord.com/developers/docs/intro">Discord Developer Portal.</a>
+2. Copie o Token do bot.
 
-Crie um bot no Discord Developer Portal.
-Copie o Token do bot.
-Telegram:
+### Telegram:
+1. Encontre o BotFather no Telegram.
+2. Crie um bot e obtenha o Token.
 
-Encontre o BotFather no Telegram.
-Crie um bot e obtenha o Token.
-Adicione esses tokens ao arquivo de configuração config.json.
+Adicione esses tokens no arquivo de variavel de ambiente <a href="#">.env</a>
 
-4. Execução
+### 4. Execução
 Para rodar o bot, utilize o comando abaixo, dependendo do modo que você deseja usar:
 
-Para o modo Kabum:
-bash
-Copiar
-Editar
+**Para o modo Kabum:**
+```bash
 python start/kabum.py
+```
+
 Para o modo Customizado (onde você pode adicionar produtos manualmente):
-bash
-Copiar
-Editar
+```bash
 python start/produtos.py
-Como Funciona?
+```
+
+### Como Funciona?
 O bot utiliza web scraping para acessar o site da Kabum, filtrar os melhores preços de produtos selecionados e enviar as ofertas diretamente para o Discord e o Telegram. Além disso, você pode configurar um arquivo JSON com uma lista de produtos de vários sites para o bot buscar automaticamente as melhores ofertas.
 
-#Estrutura do Projeto
-
-bash
-Copiar
-Editar
+# Estrutura do Projeto
+```bash
 DealHunter/
 │
 ├── start/                   # Scripts para iniciar o bot
@@ -76,15 +76,25 @@ DealHunter/
 ├── .gitignore               # Arquivos a serem ignorados pelo Git
 ├── README.md                # Este arquivo
 └── precos_monitorados.json  # Armazena as ofertas encontradas
-
-#Como Contribuir
+```
+### Como Contribuir
 Se você quiser contribuir para o projeto, siga as etapas abaixo:
 
-Fork o repositório.
-Crie uma nova branch (git checkout -b minha-nova-feature).
-Faça as alterações desejadas e commit (git commit -am 'Adiciona nova funcionalidade').
-Push para a branch (git push origin minha-nova-feature).
-Abra um Pull Request explicando suas alterações.
+1. **Fork** o repositório.
 
-#Licença
-Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para mais detalhes.
+2. Crie uma nova branch:
+```bash
+git checkout -b minha-nova-feature
+```
+3. Faça as alterações desejadas e commit:
+```bash
+git commit -am 'Adiciona nova funcionalidade'
+```
+4. **Push** para a branch:
+```bash
+git push origin minha-nova-feature
+```
+5. Abra um **Pull Request** explicando suas alterações.
+
+## **Licença**
+Este projeto está licenciado sob a Licença Livre para Estudos (Non-Commercial, Study-Only License) - veja o arquivo <a href="#">LICENSE</a> para mais detalhes.
