@@ -97,4 +97,4 @@ git push origin minha-nova-feature
 5. Abra um **Pull Request** explicando suas alterações.
 
 ## **Licença**
-Este projeto está licenciado sob a Licença Livre para Estudos (Non-Commercial, Study-Only License) - veja o arquivo <a href="#">LICENSE</a> para mais detalhes.
+Este projeto está licenciado sob a Licença Livre para Estudos (Non-Commercial, Study-Only License) - veja o arquivo <a href="https://github.com/Jhon-Ross/DealHunter?tab=License-1-ov-file">LICENSE</a> para mais detalhes.
